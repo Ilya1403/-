@@ -1,0 +1,71 @@
+# напиши здесь код основного приложения и первого экрана 
+from PyQt5.QtCore import Qt 
+from PyQt5.QtWidgets import QApplication, QRadioButton, QWidget, QPushButton, QLabel, QVBoxLayout, QHBoxLayout,QButtonGroup,QLineEdit 
+ 
+
+ 
+class TestWin(QWidget): 
+    def __init__(self): 
+        super().__init__() 
+        self.set_appear() 
+        self.initUT() 
+        self.connects() 
+        self.show() 
+    def set_appear(self):
+        self.setWindowTitle(name) 
+        self.resize(resize) 
+        self.move(resize1) 
+    def initUI(self): 
+        self.btn1 = QLabel(a1) 
+        self.btn2 = QLabel(a2) 
+        self.btn3 = QLabel(a3) 
+        self.btn4 = QLabel(a4) 
+        self.btn5 = QLabel(a5) 
+        self.btn6 = QLabel(a6)
+        self.window1 = QLineEdit(b1) 
+        self.window2 = QLineEdit(b2) 
+        self.window3 = QLineEdit(b3) 
+        self.window4 = QLineEdit(b4) 
+        self.window5 = QLineEdit(b5) 
+ 
+        self.button1 = QPushButton(c1) 
+        self.button2 = QPushButton(c2) 
+        self.button3 = QPushButton(c3) 
+        self.button4 = QPushButton(c4) 
+ 
+        self.h_line = QHBoxLayout() 
+        self.r_line = QVBoxLayout() 
+        self.l_line = QVBoxLayout() 
+ 
+ 
+ 
+        self.r_line.addWidget(self.window1,alignment = QAlignRight) 
+        self.r_line.addWidget(self.window2,alignment = QAlignLeft) 
+        self.r_line.addWidget(self.window3,alignment = QAlignLeft) 
+        self.r_line.addWidget(self.window4,alignment = QAlignLeft) 
+        self.r_line.addWidget(self.window5,alignment = QAlignLeft) 
+ 
+        self.r_line.addWidget(self.btn1,alignment = QAlignLeft) 
+        self.r_line.addWidget(self.btn2,alignment = QAlignLeft) 
+        self.r_line.addWidget(self.btn3,alignment = QAlignLeft) 
+        self.r_line.addWidget(self.btn4,alignment = QAlignLeft) 
+        self.r_line.addWidget(self.btn5,alignment = QAlignLeft) 
+ 
+        self.r_line.addWidget(self.c1) 
+        self.r_line.addWidget(self.c2) 
+        self.r_line.addWidget(self.c3) 
+ 
+        self.h_line.addWidget(self.c4) 
+ 
+        self.l_line.addWidget(self.btn6) 
+ 
+        l_line.addLayout(h_line) 
+        r_line.addLayout(h_line) 
+        main_win.setLayout(h_line) 
+    def connects(self): 
+        self.c4.clicked.connects(self.next_click1) 
+    def connects(self): 
+        self.hide() 
+        self.kw = FinalWin()
+app = QApplication([])
+main_win111 = TestWin()
